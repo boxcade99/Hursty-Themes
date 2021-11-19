@@ -15,16 +15,16 @@ git clone "https://github.com/RetroHursty69/HurstyThemes.git" "/tmp/hursty"
 
 # Move files to proper directory
 
-cp /tmp/hursty/hurstythemes.sh ./retropiemenu
-chmod 777 ./retropiemenu/hurstythemes.sh
-cp /tmp/hursty/hurstythemes.png ./retropiemenu/icons
-if [[ -d "/home/pi/scripts" ]]; then
+cp /tmp/hursty/hurstythemes.sh ~/RetroPie/retropiemenu
+chmod 777 ~/RetroPie/retropiemenu/hurstythemes.sh
+cp /tmp/hursty/hurstythemes.png ~/RetroPie/retropiemenu/icons
+if [[ -d "~/RetroPie/scripts" ]]; then
 echo "exists" > /dev/null
 else
     mkdir ./scripts
 fi
-cp /tmp/hursty/themerandom.sh ./scripts
-chmod 777 ./scripts/themerandom.sh
+cp /tmp/hursty/themerandom.sh ~/RetroPie/scripts
+chmod 777 ~/ RetroPie/scripts/themerandom.sh
 
 # Update RetroPie gamelist.xml to add new entry
 
